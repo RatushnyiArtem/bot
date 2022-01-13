@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./image/26.Jun.2019-kosmicheskie-zvezdy-v-galaktike.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main_site{
+    /* height: 1920px; */
+    height: 940px;
+    width: 100%;
+    position: relative;
+}
+.bot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content: center; */
+    overflow: hidden;
+    
+}
+.logo{
+    text-align: right;
+    /* height: 100px;
+    width: 100px; */
+}
+.bot img{
+    height: 100px;
+    width: 100px;
+}
+.mess{
+    height: 180px;
+    width: 180px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    -webkit-box-shadow: 8px 5px 15px 16px #000000; 
+    box-shadow: 8px 5px 15px 16px #000000;
+    text-align: center;
+    padding-top: 40px;
+    position: relative;
+    opacity: 0;
+    transition: all .4s linear;
+    transform: translate(60px);
+}
+.mess h1{
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+}
+.mess .lights{
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+.mess .santa{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+.mess.active{
+    opacity: 1;
+    transform: translate(0px);
+}
